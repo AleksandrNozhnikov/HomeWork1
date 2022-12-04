@@ -11,19 +11,27 @@ Console.WriteLine("a = ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("b = ");
 int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("c = ");
+int c = Convert.ToInt32(Console.ReadLine());
 
-if (a != b)
-{
+
 if (a < b)
 {
-    Console.WriteLine("a < b " + a + "<" + b);
+if (b < c)
+{
+    Console.WriteLine("max c=" + c);
 }
 else
 {
-    Console.WriteLine("a > b " + a + ">" + b);
+    Console.WriteLine("max b=" + b);
 }
     }
 else
+if (a > c)
 {
-    Console.WriteLine("a > b " + a + ">" + b);
+    Console.WriteLine("max a=" + a);
+}
+else
+{
+    Console.WriteLine("max c=" + c);
 }
